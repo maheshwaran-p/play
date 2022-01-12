@@ -1,70 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
-<html>
+<link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet" type="text/css" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Birthaday Wish</title>
-</head>
 
 <body>
-
-
-  <br>
-  <br>
-  <br>
-  <br> <br>
-  <br> <br>
-  <br> <br>
-  <br>
-
-
-
-  <div>
-    <p id="demo" style="color: #fff; justify-content: center; align-items: center;"></p>
-  </div>
-  <script>
-    setTimeout(function () { typeWriter(); }, 100);
-  </script>
+  <div id="typedtext"></div>
   <a href="index_next.html"><Button class="btn btn-primary"
       style="justify-content: end; align-items: center; float:inline-end;"> next
     </Button> </a>
   <style>
-    @import url('https://fonts.googleapis.com/css?family=Bad+Script');
-
     body {
-
-      margin-top: 200px;
-
-
-
-      height: 100px;
-      background: black;
-      font-family: 'Bad Script', cursive;
+      font-family: 'Waiting for the Sunrise', cursive;
+      font-size: 30px;
+      margin: 10px 50px;
+      letter-spacing: 6px;
+      font-weight: bold;
     }
   </style>
-
   <script>
-    var i = 0;
-    var txt = '  You Know That ? Today is two world\'s number one richest persons Birthday  .  ';
-    var speed = 100;
+    // set up text to print, each item in array is new line
+    var aText = new Array(
+      "You Know That ? Today is two world\'s number one richest persons Birthday  ."
 
-    function typeWriter() {
-      if (i < txt.length) {
-        document.getElementById("demo").innerHTML += txt.charAt(i);
-        i++;
-        setTimeout(typeWriter, speed);
+    );
+    var iSpeed = 100; // time delay of print out
+    var iIndex = 0; // start printing array at this posision
+    var iArrLength = aText[0].length; // the length of the text array
+    var iScrollAt = 20; // start scrolling up at this many lines
+
+    var iTextPos = 0; // initialise text position
+    var sContents = ''; // initialise contents variable
+    var iRow; // initialise current row
+
+    function typewriter() {
+      sContents = ' ';
+      iRow = Math.max(0, iIndex - iScrollAt);
+      var destination = document.getElementById("typedtext");
+
+      while (iRow < iIndex) {
+        sContents += aText[iRow++] + '<br />';
+      }
+      destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
+      if (iTextPos++ == iArrLength) {
+        iTextPos = 0;
+        iIndex++;
+        if (iIndex != aText.length) {
+          iArrLength = aText[iIndex].length;
+          setTimeout("typewriter()", 500);
+        }
+      } else {
+        setTimeout("typewriter()", iSpeed);
       }
     }
-  </script>
-  <script>
-    Swal.fire(' You Know That ? Today is two world\'t number one richest persons Birthday  .  Want to Know Who They Are ?  ')
-  </script>
-  <script src="scripts.js"></script>
 
+
+    typewriter();
+  </script>
 </body>
-
-
-
-</html>
