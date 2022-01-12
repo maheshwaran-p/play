@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birthaday Wish</title>
+</head>
+
+<body text algn="down">
+
+  <button style="justify-content:right;align-items: right; padding-right: 50px; margin-right: 20%;" class="button">Click
+    Me
+  </button><br>
+
+
+
+
+  <div>
+    <p id="demo" style="color: #fff;"></p>
+  </div>
+  <script>
+    setTimeout(function () { typeWriter(); }, 100);
+  </script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Bad+Script');
+
+    body {
+      text-align: top;
+      margin-top: 200px;
+      display: flex;
+      justify-content: top;
+
+      height: 100px;
+      background: black;
+      font-family: 'Bad Script', cursive;
+    }
+  </style>
+
+  <script>
+    var i = 0;
+    var txt = ' You Know That ? Today is two world number one richest persons Birthday  .  Want to Know How They Are ?  ';
+    var speed = 100;
+
+    function typeWriter() {
+      if (i < txt.length) {
+        document.getElementById("demo").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+  </script>
+
+  <script src="scripts.js"></script>
+
+</body>
+
+
+
+</html>
