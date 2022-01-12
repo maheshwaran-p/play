@@ -8,30 +8,36 @@
   <title>Birthaday Wish</title>
 </head>
 
-<body text algn="down">
+<body>
 
-  <button style="justify-content:right;align-items: right; padding-right: 50px; margin-right: 20%;" class="button">Click
-    Me
-  </button><br>
 
+  <br>
+  <br>
+  <br>
+  <br> <br>
+  <br> <br>
+  <br> <br>
+  <br>
 
 
 
   <div>
-    <p id="demo" style="color: #fff;"></p>
+    <p id="demo" style="color: #fff; justify-content: center; align-items: center;"></p>
   </div>
   <script>
     setTimeout(function () { typeWriter(); }, 100);
   </script>
-
+  <a href="index_next.html"><Button class="btn btn-primary"
+      style="justify-content: end; align-items: center; float:inline-end;"> next
+    </Button> </a>
   <style>
     @import url('https://fonts.googleapis.com/css?family=Bad+Script');
 
     body {
-      text-align: top;
+
       margin-top: 200px;
-      display: flex;
-      justify-content: top;
+
+
 
       height: 100px;
       background: black;
@@ -41,7 +47,7 @@
 
   <script>
     var i = 0;
-    var txt = ' You Know That ? Today is two world number one richest persons Birthday  .  Want to Know How They Are ?  ';
+    var txt = '    You Know That ? Today is two world number one richest persons Birthday  .  ';
     var speed = 100;
 
     function typeWriter() {
@@ -52,7 +58,9 @@
       }
     }
   </script>
-
+  <script>
+    Swal.fire(' You Know That ? Today is two world number one richest persons Birthday  .  Want to Know Who They Are ?  ')
+  </script>
   <script src="scripts.js"></script>
 
 </body>
