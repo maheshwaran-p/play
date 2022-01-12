@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthaday Wish</title>
+</head>
+
+<body>
+
+
+    <br>
+    <br>
+    <br>
+    <br> <br>
+    <br> <br>
+    <br> <br>
+    <br>
+
+
+
+    <div>
+        <p id="demo" style="color: #fff; justify-content: center; align-items: center;"></p>
+    </div>
+    <script>
+        setTimeout(function () { typeWriter(); }, 100);
+    </script>
+    <a href="final.html"><Button class="btn btn-primary"
+            style="justify-content: end; align-items: center; float:inline-end;"> next
+        </Button> </a>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Bad+Script');
+
+        body {
+
+            margin-top: 200px;
+
+
+
+            height: 100px;
+            background: black;
+            font-family: 'Bad Script', cursive;
+        }
+    </style>
+
+    <script>
+        var i = 0;
+        var txt = '  Jeff Bezos is the one of the richest Man by his Money and Sumathi Akka is the One of Richest Person by her Kind Heart . So Jeff Bezos  is a  Billionaire By his Money and Sumathi is a Trillionaire by her kindness ';
+        var speed = 100;
+
+        function typeWriter() {
+            if (i < txt.length) {
+                document.getElementById("demo").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+    </script>
+
+    <script src="scripts.js"></script>
+
+</body>
+
+
+
+</html>
