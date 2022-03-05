@@ -1,0 +1,1569 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- InstanceBegin template="/Templates/html.dwt.php" codeOutsideHTMLIsLocked="false" -->
+
+<head>
+    <!-- InstanceBeginEditable name="doctitle" -->
+    <title>How to Create an HTML Page - Tutorial Republic</title>
+    <meta name="description"
+        content="An HTML file is simply a text file saved with an .html or .htm extension. You can create HTML files using any text editor such as Notepad or TextEdit." />
+    <!-- InstanceEndEditable -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="fb:admins" content="100001054961582" />
+    <meta property="fb:app_id" content="1404574483159557" />
+    <meta property="og:image" content="/lib/images/signature.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />
+    <style>
+        html,
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        img {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline
+        }
+
+        html,
+        body {
+            min-height: 100%
+        }
+
+        p {
+            margin: 0 0 15px
+        }
+
+        ol,
+        ul {
+            margin: 0 0 15px
+        }
+
+        a,
+        a:active,
+        a:visited {
+            outline: none;
+            color: #1db79f;
+            text-decoration: none
+        }
+
+        a img {
+            border: none;
+            outline: none
+        }
+
+        p code,
+        table td:last-child code,
+        .content ul li code,
+        code.mark {
+            padding: 2px 6px;
+            font-size: 94%;
+            color: #333;
+            background-color: #f1f1f1;
+            border-radius: 3px
+        }
+
+        a code {
+            color: inherit;
+            background: none;
+            padding: 0
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0
+        }
+
+        table td {
+            vertical-align: top
+        }
+
+        body {
+            min-width: 1320px;
+            color: #414141;
+            background: #fafafa;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif;
+            font-size: 17px;
+            line-height: 1.7
+        }
+
+        input,
+        select,
+        textarea,
+        button,
+        div,
+        span,
+        a {
+            box-sizing: border-box
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            color: #262626;
+            margin: 20px 0 10px;
+            line-height: 1.5;
+            font-weight: 600
+        }
+
+        h1 {
+            font-size: 34px;
+            margin-top: 17px
+        }
+
+        h2 {
+            font-size: 28px
+        }
+
+        h3 {
+            font-size: 22px
+        }
+
+        .space {
+            margin-bottom: 30px !important
+        }
+
+        .break {
+            margin-bottom: 20px !important
+        }
+
+        .text-center {
+            text-align: center !important
+        }
+
+        .scroll {
+            height: 195px;
+            overflow-y: scroll
+        }
+
+        .scroll.large {
+            height: 245px
+        }
+
+        .scroll.xlarge {
+            height: 290px
+        }
+
+        .scroll.xxlarge {
+            height: 340px
+        }
+
+        sup {
+            font-size: 13px
+        }
+
+        h1 sup {
+            background: #ec0000;
+            border-radius: 3px;
+            padding: 5px 10px;
+            font-size: 15px;
+            color: #fff;
+            position: relative;
+            top: 5px
+        }
+
+        .leaderboard {
+            padding-top: 18px;
+            position: relative;
+            box-sizing: content-box;
+            height: 91px;
+            overflow: hidden
+        }
+
+        .intro-image img {
+            display: block;
+            margin: 10px 0 25px;
+            width: 100%
+        }
+
+        .clearfix::after {
+            content: ".";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden
+        }
+
+        code,
+        .code,
+        .syntax,
+        .green-box,
+        .sky-box,
+        .gray-box,
+        .pink-box,
+        .red-box,
+        .at-rule,
+        .codebox pre,
+        .console-output,
+        .command {
+            font-size: 16px;
+            font-family: Consolas, Monaco, Courier, monospace
+        }
+
+        .console-output {
+            margin: 15px 0
+        }
+
+        .command {
+            background: #f2f2f2;
+            padding: 16px 18px;
+            margin: 15px 0 25px;
+            border-radius: 3px
+        }
+
+        hr {
+            border: none;
+            border-bottom: 1px solid #e7e9ed;
+            height: 1px;
+            margin: 40px 0 30px
+        }
+
+        .summary,
+        .topic {
+            border: 1px solid #eaeaea;
+            border-width: 1px 0;
+            margin: 20px 0;
+            padding: 10px 0;
+            color: #8e9aa6
+        }
+
+        h2.section-title span {
+            display: inline-block;
+            border-bottom: 4px solid #c9d7e0;
+            padding: 0 50px 12px 0
+        }
+
+        .wrapper {
+            width: 1320px;
+            padding: 0 15px;
+            margin: 0 auto
+        }
+
+        .header {
+            background: #23384e;
+            padding: 16px 0
+        }
+
+        input.search {
+            background: #fff;
+            border: 0 none;
+            color: #807E7E;
+            float: left;
+            height: 38px;
+            font-size: 14px;
+            outline: medium none;
+            padding: 6px 14px;
+            width: 500px;
+            border-radius: 2px;
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0.6);
+            font-family: inherit
+        }
+
+        .search-btn {
+            color: rgba(0, 0, 0, .6);
+            background: #ebebeb;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            float: left;
+            height: 38px;
+            width: 44px;
+            display: block;
+            margin-left: -2px;
+            border-radius: 0 2px 2px 0;
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0.7)
+        }
+
+        .logo img {
+            height: 44px;
+            margin: -3px 0;
+            display: block
+        }
+
+        .site-search {
+            float: left;
+            margin-left: 8%
+        }
+
+        .menu {
+            background-color: #f5f5f5;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, .15);
+            position: relative;
+            z-index: 9
+        }
+
+        .menu a {
+            color: #666;
+            display: inline-block;
+            padding: 0 10px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            height: 48px;
+            line-height: 48px
+        }
+
+        .menu a:first-child {
+            margin-left: -10px
+        }
+
+        .menu a.tool-link {
+            float: right;
+            display: block;
+            border-radius: 40px;
+            line-height: normal;
+            position: relative;
+            height: auto;
+            top: 8px;
+            padding: 6px 12px;
+            color: #1ebba3;
+            border: 1px double #1ebba3
+        }
+
+        .fl,
+        .logo {
+            float: left
+        }
+
+        .leftcolumn {
+            width: 240px;
+            float: left;
+            font-size: 16px;
+            color: #4f4f4f
+        }
+
+        .centercolumn {
+            width: 870px;
+            float: left
+        }
+
+        .rightcolumn {
+            width: 160px;
+            float: right
+        }
+
+        .content {
+            background: #fff;
+            padding: 12px 40px 20px;
+            border: 1px solid #dedede;
+            border-top: none;
+            border-radius: 1px
+        }
+
+        .sidebar {
+            padding-top: 18px;
+            margin-top: 12px;
+            position: relative
+        }
+
+        .leftcolumn .segment {
+            margin: 18px 0 12px;
+            position: relative;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: normal
+        }
+
+        .leftcolumn a {
+            color: #4f4f4f;
+            display: block;
+            border-bottom: 1px solid transparent
+        }
+
+        .leftcolumn ul {
+            list-style: none;
+            padding: 0;
+            margin: 0
+        }
+
+        .segment,
+        .chapters,
+        .chapters a,
+        .toggle-tree-menu {
+            float: left;
+            clear: both
+        }
+
+        .toggle-tree-menu {
+            height: 30px
+        }
+
+        .toggle-tree-menu span {
+            display: none
+        }
+
+        h1 code,
+        h2 code,
+        h3 code {
+            font: inherit
+        }
+
+        .color-box {
+            margin: 20px 0;
+            padding-left: 20px;
+            position: relative
+        }
+
+        .note-box,
+        .warning-box,
+        .tip-box {
+            padding: 15px 15px 2px 28px
+        }
+
+        .content ul li {
+            margin-top: 7px
+        }
+
+        .extra {
+            padding-top: 5px
+        }
+
+        .green-box,
+        .sky-box,
+        .gray-box,
+        .red-box,
+        .pink-box {
+            color: #000;
+            margin: 15px 0 20px;
+            padding: 15px 20px;
+            background-color: #f6f8fa;
+            border: 1px solid #d7e2ec
+        }
+
+        .example {
+            background: #f4f5f6;
+            padding: 3px;
+            margin: 15px 0 20px
+        }
+
+        .codebox {
+            background: #fff;
+            border: 1px solid #ddd
+        }
+
+        .codebox-title {
+            height: 42px;
+            padding-left: 12px;
+            border-bottom: 1px solid #ddd;
+            background: #f5f5f5
+        }
+
+        .codebox-title h4 {
+            margin: 0;
+            font-size: 18px;
+            line-height: 40px;
+            float: left;
+            font-weight: 600
+        }
+
+        a.try-btn,
+        a.download-btn {
+            width: 150px;
+            height: 100%;
+            color: #333;
+            font-size: 15px;
+            line-height: 40px;
+            font-weight: 600;
+            text-align: center;
+            float: right;
+            display: block;
+            border-left: 1px solid #ddd;
+            background: rgba(27, 31, 35, 0.08);
+            box-sizing: border-box;
+            font-family: Arial, sans-serif
+        }
+
+        a.try-btn span {
+            font-size: 18px;
+            line-height: normal
+        }
+
+        .hide,
+        .code-style,
+        .box-size,
+        .bottom-link,
+        .footer,
+        .code-style,
+        .snippets,
+        .report-error,
+        .badge,
+        .social,
+        .ad-label,
+        .mobile-only,
+        ul.tree-menu li ul {
+            display: none
+        }
+
+        .skyscraper {
+            width: 160px;
+            height: 600px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            background: #ebecf0
+        }
+
+        .bottom-ad {
+            margin-top: 50px;
+            padding: 28px;
+            position: relative;
+            background: url(/lib/images/smooth-line.png) no-repeat center #f9f9f9
+        }
+
+        .rectangle-left,
+        .rectangle-right {
+            width: 336px;
+            height: 280px;
+            overflow: hidden
+        }
+
+        .fr,
+        a.previous-page,
+        a.next-page,
+        .rectangle-right,
+        .topic-nav {
+            float: right
+        }
+
+        a.previous-page,
+        a.next-page {
+            width: 32px;
+            height: 32px;
+            line-height: 30px
+        }
+
+        .shadow {
+            background: #F7F8F9;
+            padding: 3px;
+            margin: 15px 0 20px
+        }
+
+        .color-box .shadow {
+            margin: 0
+        }
+
+        .syntax {
+            color: #2f4959;
+            padding: 15px 20px;
+            background: #F9F9FA;
+            border: 1px solid #ddd
+        }
+
+        code[class*="language-"],
+        pre[class*="language-"] {
+            color: #000;
+            background: none;
+            font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+            text-align: left;
+            white-space: pre;
+            word-break: normal;
+            word-wrap: normal;
+            line-height: 1.5;
+            tab-size: 4;
+            hyphens: none
+        }
+
+        pre[class*="language-"] {
+            position: relative;
+            margin: .5em 0;
+            overflow: visible;
+            padding: 0
+        }
+
+        pre[class*="language-"]>code {
+            position: relative;
+            border-left: 10px solid #358ccb;
+            box-shadow: -1px 0 0 0 #358ccb, 0 0 0 1px #dfdfdf;
+            background-color: #fdfdfd;
+            background-image: linear-gradient(transparent 50%, rgba(69, 142, 209, 0.04) 50%);
+            background-size: 3em 3em;
+            background-origin: content-box;
+            background-attachment: local
+        }
+
+        code[class*="language"] {
+            max-height: inherit;
+            height: inherit;
+            padding: 0 1em;
+            display: block;
+            overflow: auto
+        }
+
+        :not(pre)>code[class*="language-"] {
+            position: relative;
+            padding: .2em;
+            border-radius: .3em;
+            color: #c92c2c;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            display: inline;
+            white-space: normal
+        }
+
+        pre[class*="language-"].line-numbers {
+            padding-left: 0
+        }
+
+        pre[class*="language-"].line-numbers code {
+            padding-left: 3.8em
+        }
+
+        pre[class*="language-"].line-numbers .line-numbers-rows {
+            left: 0
+        }
+
+        pre[class*="language-"][data-line] {
+            padding-top: 0;
+            padding-bottom: 0;
+            padding-left: 0
+        }
+
+        pre[data-line] code {
+            position: relative;
+            padding-left: 4em
+        }
+
+        pre .line-highlight {
+            margin-top: 0
+        }
+
+        pre.line-numbers {
+            position: relative;
+            padding-left: 3.8em;
+            counter-reset: linenumber;
+            white-space: pre-wrap !important
+        }
+
+        pre.line-numbers>code {
+            position: relative;
+            white-space: inherit
+        }
+
+        .line-numbers-rows,
+        .codebox pre.inactive {
+            display: none
+        }
+
+        .codebox pre.syntax-highlighter {
+            margin: 0;
+            padding: 0;
+            overflow: auto
+        }
+
+        pre.line-numbers .line-numbers-rows {
+            border-right: 3px solid #6CE26C
+        }
+
+        .codebox pre.syntax-highlighter>code {
+            box-shadow: none !important;
+            padding-left: 3.8em;
+            background-image: linear-gradient(transparent 50%, #F8F8F8 50%);
+            font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace !important;
+            font-size: 16px;
+            line-height: 1.5;
+            overflow-wrap: break-word
+        }
+
+        .codebox pre.syntax-highlighter,
+        .codebox pre.syntax-highlighter code {
+            border: none;
+            width: 100%;
+            box-sizing: border-box
+        }
+
+        pre.line-numbers code,
+        pre.line-numbers .line-numbers-rows {
+            padding-top: 2px;
+            padding-bottom: 2px
+        }
+
+        pre.single-line code,
+        pre.single-line .line-numbers-rows {
+            padding-top: 13px;
+            padding-bottom: 13px;
+            background: #fff !important
+        }
+
+        .preview-box {
+            padding: 15px;
+            text-align: center;
+            cursor: pointer;
+            overflow: hidden;
+            background: #FFF;
+            border: 1px solid #e6e6e6
+        }
+
+        .preview-box a,
+        .preview-box img {
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+            height: auto
+        }
+
+        .download-box {
+            text-align: center;
+            padding: 20px 0;
+            margin: 20px 0 10px
+        }
+
+        .output-box {
+            border-color: #d4d4d4;
+            border-style: solid;
+            border-width: 1px 0;
+            padding: 5px 15px;
+            overflow: hidden;
+            background: #fff;
+            margin: 10px 0
+        }
+
+        .demo-box {
+            margin-top: 15px
+        }
+
+        .subhead {
+            border-bottom: 3px solid #DCE3EB;
+            margin-bottom: 15px;
+            padding-bottom: 10px
+        }
+
+        table.data,
+        table.description {
+            width: 100%;
+            font-size: 92%
+        }
+
+        table.data th,
+        table.data td {
+            padding: 8px 10px;
+            vertical-align: top;
+            border: 1px solid #dee2e6
+        }
+
+        table.data tr,
+        table.data thead+tbody tr:nth-child(2n),
+        table.data.description td {
+            background: #fff
+        }
+
+        table.data tr:nth-child(2n),
+        table.data thead+tbody tr,
+        table.data.description th {
+            background: #f8f8f8
+        }
+
+        table.data td.section {
+            color: #fff;
+            background: #343a40;
+            border-color: #454d55
+        }
+
+        table.data th {
+            color: #000;
+            text-align: left;
+            font-size: 15px;
+            border-bottom-width: 2px
+        }
+
+        table.data.description th {
+            width: 150px;
+            border-width: 1px
+        }
+
+        table.no-wrap tr td:first-child {
+            white-space: nowrap
+        }
+
+        .topic-nav {
+            padding-right: 5px;
+            color: #d0d0d0
+        }
+
+        .topic-nav a {
+            padding: 0 15px;
+            margin: 0 0 0 5px;
+            position: relative;
+            display: inline-block
+        }
+
+        .topic-nav a::after {
+            font-size: 25px;
+            position: absolute;
+            line-height: 1
+        }
+
+        .topic-nav a:first-child {
+            margin: 0 5px 0 0
+        }
+
+        .topic-nav a:first-child::after {
+            content: '\00AB';
+            left: -5px
+        }
+
+        .topic-nav a:last-child::after {
+            content: '\00BB';
+            right: -5px
+        }
+
+        .menu a.old-version {
+            height: 21px;
+            font-size: 13px;
+            line-height: 17px;
+            border: 1px double;
+            border-radius: 40px;
+            margin-right: 10px
+        }
+
+        @media screen and (max-width: 1340px) {
+            body {
+                min-width: 1300px
+            }
+
+            .wrapper {
+                width: 1300px
+            }
+
+            .centercolumn {
+                width: 850px
+            }
+
+            .bottom-ad {
+                padding: 24px
+            }
+        }
+
+        @media screen and (max-width: 1320px) {
+            body {
+                min-width: 1280px
+            }
+
+            .wrapper {
+                width: 1280px
+            }
+
+            .leftcolumn {
+                width: 230px
+            }
+
+            .centercolumn {
+                width: 840px
+            }
+
+            .content {
+                padding-left: 30px;
+                padding-right: 30px
+            }
+
+            .bottom-ad {
+                padding: 26px
+            }
+        }
+
+        @media screen and (max-width: 1300px) {
+            body {
+                min-width: 1260px
+            }
+
+            .wrapper {
+                width: 1260px
+            }
+
+            .centercolumn {
+                width: 820px
+            }
+
+            .bottom-ad {
+                padding: 21px
+            }
+        }
+
+        @media screen and (max-width: 1280px) {
+            body {
+                min-width: 1240px
+            }
+
+            .wrapper {
+                width: 1240px
+            }
+
+            .centercolumn {
+                width: 800px
+            }
+
+            .content {
+                padding-left: 25px;
+                padding-right: 25px
+            }
+
+            .bottom-ad {
+                padding: 19px
+            }
+        }
+
+        @media screen and (max-width: 1260px) {
+            body {
+                min-width: 1220px
+            }
+
+            .wrapper {
+                width: 1220px
+            }
+
+            .centercolumn {
+                width: 780px
+            }
+
+            .bottom-ad {
+                padding: 13px
+            }
+        }
+
+        @media screen and (max-width: 992px) {
+            body {
+                min-width: 100%;
+                max-width: 100%;
+                padding-top: 46px
+            }
+
+            .wrapper {
+                width: 100%;
+                min-width: auto;
+                padding: 0
+            }
+
+            .header {
+                height: 46px;
+                padding: 5px 0;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                width: 100%;
+                z-index: 99
+            }
+
+            .logo img {
+                height: 30px;
+                margin: 3px 0 0
+            }
+
+            .menu {
+                width: 100%;
+                padding-left: 15px;
+                padding-right: 15px;
+                overflow-x: auto;
+                white-space: nowrap
+            }
+
+            .centercolumn {
+                width: 100%;
+                min-width: auto;
+                float: none
+            }
+
+            .content {
+                padding: 15px 30px;
+                border-width: 0 0 1px 0
+            }
+
+            .content img {
+                max-width: 100%;
+                height: auto
+            }
+
+            .skyscraper {
+                display: inline-block
+            }
+
+            .shadow,
+            .example,
+            .console-output,
+            .content pre {
+                max-width: 100%;
+                overflow-x: auto
+            }
+
+            .codebox.multi-style-mode pre {
+                margin-top: 38px;
+                border-top: 1px solid #ddd
+            }
+
+            .bottom-ad {
+                height: auto;
+                background: none;
+                padding: 18px 0 0;
+                position: relative
+            }
+
+            .rectangle-left,
+            .rectangle-right {
+                float: none;
+                margin: 0 auto 20px;
+                background: #EDEEF2
+            }
+
+            .leftcolumn,
+            .footer,
+            .social,
+            .site-search,
+            .topic,
+            .code-style,
+            .menu a.tool-link,
+            .backdrop {
+                display: none
+            }
+
+            .summary,
+            .topic {
+                padding: 5px 0;
+                margin: 10px 0
+            }
+
+            .leftcolumn,
+            .centercolumn,
+            .rightcolumn,
+            .sidebar {
+                float: none
+            }
+
+            .header,
+            .menu,
+            .centercolumn,
+            .footer,
+            .appeal-text {
+                width: 100%
+            }
+
+            .rightcolumn,
+            .sidebar {
+                margin: 25px auto 0
+            }
+
+            .overview {
+                padding-right: 0
+            }
+
+            .scroll-pane {
+                overflow-x: auto
+            }
+
+            table.data {
+                min-width: 480px
+            }
+
+            table.data pre {
+                display: inline;
+                white-space: normal
+            }
+
+            table tr th,
+            table tr td {
+                width: auto !important
+            }
+
+            .preview-box {
+                padding: 6px
+            }
+
+            .leaderboard {
+                margin: 15px 0 20px
+            }
+
+            h1 {
+                font-size: 30px
+            }
+
+            h2 {
+                font-size: 24px
+            }
+
+            h3 {
+                font-size: 20px
+            }
+
+            .codebox pre.syntax-highlighter {
+                overflow-x: auto
+            }
+
+            .codebox pre.syntax-highlighter>code {
+                min-width: 614px;
+                height: auto;
+                overflow-x: hidden
+            }
+        }
+
+        @media screen and (max-width: 830px) {
+            .content {
+                padding: 15px
+            }
+        }
+
+        @media screen and (min-width: 993px) {
+
+            .site-search,
+            .leftcolumn,
+            .social {
+                display: block !important
+            }
+
+            .backdrop {
+                display: none !important
+            }
+
+            .hide-scroll {
+                overflow-x: hidden !important
+            }
+        }
+
+        @media screen and (min-width: 1500px) {
+            body {
+                min-width: 1350px
+            }
+
+            .wrapper {
+                width: 1350px
+            }
+
+            .centercolumn {
+                width: 900px
+            }
+
+            .content {
+                padding-left: 50px;
+                padding-right: 50px
+            }
+
+            .bottom-ad {
+                padding: 31px
+            }
+        }
+    </style>
+    <script>
+        (function () {
+            var bsa_optimize = document.createElement('script');
+            bsa_optimize.type = 'text/javascript';
+            bsa_optimize.async = true;
+            bsa_optimize.src = 'https://cdn4.buysellads.net/pub/tutorialrepublic.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(bsa_optimize);
+        })();
+    </script>
+
+    <!-- InstanceBeginEditable name="head" -->
+    <!-- InstanceEndEditable -->
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-40117907-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-40117907-1');
+    </script>
+</head>
+
+<body>
+    <!--Header-->
+
+    <div class="header">
+        <div class="wrapper clearfix">
+            <button type="button" class="open-menu mobile-only"><i class="icon-menu"></i></button>
+            <div class="logo">
+                <a href="https://www.tutorialrepublic.com/"><img src="/lib/images/logo.svg"
+                        alt="TutorialRepublic" /></a>
+            </div>
+
+            <div class="social">
+                <a href="https://www.facebook.com/tutorialrepublic" target="_blank" title="Join us on Facebook"><i
+                        class="icon-facebook"></i></a>
+                <a href="https://twitter.com/tutrepublic" target="_blank" title="Follow us on Twitter"><i
+                        class="icon-twitter"></i></a>
+                <a href="/contact-us.php" target="_blank" title="Send us an Email"><i class="icon-mail"></i></a>
+            </div>
+            <button type="button" class="open-search mobile-only">
+                <i class="icon-search"></i>
+            </button>
+        </div>
+    </div>
+
+    <!--End:Header-->
+    <div class="wrapper clearfix">
+        <div class="leftcolumn" id="myNav">
+
+
+
+
+
+            <div class="centercolumn">
+                <!--Text Content-->
+                <div class="content">
+                    <div class="leaderboard">
+
+
+
+                    </div> <!-- InstanceBeginEditable name="main_content" -->
+                    <a href="/html-tutorial/" class="previous-page" title="Go to Previous Page"></a>
+                    <a href="html-elements.php" class="next-page" title="Go to Next Page"></a>
+                    <h1>How <span>It Works</span></h1>
+                    <p class="summary">Parental Control is a platform to restrict children by taking screen time from
+                        children's device.</p>
+                    <h2>Getting Started</h2>
+                    <p></p>
+                    <p class="space">Well, let's get started with creating your first HTML page.</p>
+                    <h2>Creating Your First HTML Document</h2>
+                    <p class="break">Let's walk through the following steps. At the end of this tutorial, you will have
+                        made
+                        an HTML file that displays "Hello world" message in your web browser.</p>
+                    <h3>Step 1: Creating the HTML file</h3>
+                    <p>Open up your computer's plain text editor and create a new file.</p>
+                    <!--Tip box-->
+                    <div class="color-box space">
+                        <div class="shadow">
+                            <div class="info-tab tip-icon" title="Useful Tips"><i></i></div>
+                            <div class="tip-box">
+                                <p><strong>Tip:</strong> We suggest you to use Notepad (on Windows), TextEdit (on Mac)
+                                    or
+                                    some other simple text editor to do this; don't use Word or WordPad! Once you
+                                    understand
+                                    the basic principles, you may switch to more advanced tools such as Adobe
+                                    Dreamweaver.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End:Tip box-->
+                    <h3>Step 2: Type some HTML code</h3>
+                    <p>Start with an empty window and type the following code:</p>
+                    <!--Code box-->
+                    <div class="example">
+                        <div class="codebox">
+                            <div class="codebox-title">
+                                <h4>Example</h4><a href="../codelab.php?topic=html&amp;file=simple-html-file"
+                                    target="_blank" class="try-btn" title="Try this code using online Editor">Try this
+                                    code
+                                    <span>&raquo;</span></a>
+                            </div>
+                            <pre class="syntax-highlighter line-numbers"><code class="language-markup">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;A simple HTML document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p&gt;Hello World!&lt;p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                        </div>
+                    </div>
+                    <!--End:Code box-->
+                    <h3>Step 3: Saving the file</h3>
+                    <p>Now save the file on your desktop as "myfirstpage.html ".</p>
+                    <!--Note box-->
+                    <div class="color-box break">
+                        <div class="shadow">
+                            <div class="info-tab note-icon" title="Important Notes"><i></i></div>
+                            <div class="note-box">
+                                <p><strong>Note:</strong> It is important that the extension <code>.html</code> is
+                                    specified
+                                    &mdash; some text editors, such as Notepad, will automatically save it as
+                                    <code>.txt</code> otherwise.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End:Note box-->
+                    <p class="space">To open the file in a browser. Navigate to your file then double click on it. It
+                        will
+                        open in your default Web browser. If it does not, open your browser and drag the file to it.</p>
+                    <h2>Explanation of code</h2>
+                    <p>You might think what that code was all about. Well, let's find out.</p>
+                    <ul>
+                        <li>The first line <code>&lt;!DOCTYPE html&gt;</code> is the <a
+                                href="html-doctypes.php">document
+                                type declaration</a>. It instructs the web browser that this document is an HTML5
+                            document.
+                            It is case-insensitive.</li>
+                        <li>The <code>&lt;head&gt;</code> element is a container for the tags that provides information
+                            about the document, for example, <code>&lt;title&gt;</code> tag defines the title of the
+                            document.</li>
+                        <li>The <code>&lt;body&gt;</code> element contains the document's actual content (paragraphs,
+                            links,
+                            images, tables, and so on) that is rendered in the web browser and displayed to the user.
+                        </li>
+                    </ul>
+                    <p>You will learn about the different HTML elements in detail in the upcoming chapters. For now,
+                        just
+                        focus on the basic structure of the HTML document.</p>
+                    <!--Note box-->
+                    <div class="color-box break">
+                        <div class="shadow">
+                            <div class="info-tab note-icon" title="Important Notes"><i></i></div>
+                            <div class="note-box">
+                                <p><strong>Note:</strong> A DOCTYPE declaration appears at the top of a web page before
+                                    all
+                                    other elements; however the doctype declaration itself is not an HTML tag. Every
+                                    HTML
+                                    document requires a document type declaration to insure that your pages are
+                                    displayed
+                                    correctly.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End:Note box-->
+                    <!--Tip box-->
+                    <div class="color-box space">
+                        <div class="shadow">
+                            <div class="info-tab tip-icon" title="Useful Tips"><i></i></div>
+                            <div class="tip-box">
+                                <p><strong>Tip:</strong> The <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, and
+                                    <code>&lt;body&gt;</code> tags make up the basic skeleton of every web page. Content
+                                    inside the <code>&lt;head&gt;</code> and <code>&lt;/head&gt;</code> are invisible to
+                                    users with one exception: the text between <code>&lt;title&gt;</code> and
+                                    <code>&lt;/title&gt;</code> tags which appears as the title on a browser tab.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End:Tip box-->
+                    <hr />
+                    <h2>HTML Tags and Elements</h2>
+                    <p>HTML is written in the form of HTML elements consisting of markup tags. These markup tags are the
+                        fundamental characteristic of HTML. Every markup tag is composed of a keyword, surrounded by
+                        angle
+                        brackets, such as <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>,
+                        <code>&lt;body&gt;</code>,
+                        <code>&lt;title&gt;</code>, <code>&lt;p&gt;</code>, and so on.
+                    </p>
+                    <p>HTML tags normally come in pairs like <code>&lt;html&gt;</code> and <code>&lt;/html&gt;</code>.
+                        The
+                        first tag in a pair is often called the opening tag (or start tag), and the second tag is called
+                        the
+                        closing tag (or end tag).</p>
+                    <p>An opening tag and a closing tag are identical, except a slash (<code>/</code>) after the opening
+                        angle bracket of the closing tag, to tell the browser that the command has been completed.</p>
+                    <p>In between the start and end tags you can place appropriate contents. For example, a paragraph,
+                        which
+                        is represented by the <code>p</code> element, would be written as:</p>
+                    <!--Code box-->
+                    <div class="example">
+                        <div class="codebox">
+                            <div class="codebox-title">
+                                <h4>Example</h4><a href="../codelab.php?topic=html&amp;file=markup-tags" target="_blank"
+                                    class="try-btn" title="Try this code using online Editor">Try this code
+                                    <span>&raquo;</span></a>
+                            </div>
+                            <pre class="syntax-highlighter line-numbers"><code class="language-markup">&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;!-- Paragraph with nested element --&gt;
+&lt;p&gt;
+    This is &lt;b&gt;another&lt;/b&gt; paragraph.
+&lt;/p&gt;</code></pre>
+                        </div>
+                    </div>
+                    <!--End:Code box-->
+                    <p>You will learn about the various <a href="html-elements.php">HTML elements</a> in upcoming
+                        chapter.
+                    </p>
+                    <!--Bottom Navigation-->
+                    <div class="bottom-link clearfix">
+                        <a href="/html-tutorial/" class="previous-page-bottom">Previous Page</a>
+                        <a href="html-elements.php" class="next-page-bottom">Next Page</a>
+                    </div>
+                    <!--End:Bottom Navigation-->
+                    <!-- InstanceEndEditable -->
+                    <div class="bottom-ad clearfix">
+
+                        <div class="ad-label">Advertisements</div>
+
+                        <!--Rectangle Left-->
+                        <div class="rectangle-left fl">
+                            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                            <!-- Large Rectangle Left -->
+                            <ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px"
+                                data-ad-client="ca-pub-9107540490929984" data-ad-slot="8162953958"></ins>
+                            <script>
+                                (adsbygoogle = window.adsbygoogle || []).push({});
+                            </script>
+                        </div>
+                        <!--End:Rectangle Left-->
+
+                        <!--Rectangle Right-->
+                        <div class="rectangle-right fr">
+                            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                            <!-- Large Rectangle Right -->
+                            <ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px"
+                                data-ad-client="ca-pub-9107540490929984" data-ad-slot="3324015654"></ins>
+                            <script>
+                                (adsbygoogle = window.adsbygoogle || []).push({});
+                            </script>
+                        </div>
+                        <!--End:Rectangle Right-->
+
+                    </div>
+
+                </div>
+                <!--End:Text Content-->
+                <!--Feedback Form-->
+                <div class="snippets">
+                    <a href="/snippets/gallery.php" target="_blank"><img src="/lib/images/bootstrap-code-snippets.png"
+                            alt="Bootstrap UI Design Templates" /></a>
+                </div>
+                <!--End:Feedback Form-->
+            </div>
+            <div class="rightcolumn">
+                <div class="sidebar">
+
+                    <div class="ad-label">Advertisements</div>
+
+                    <div class="skyscraper primary">
+                        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <!-- Premium Skyscraper -->
+                        <ins class="adsbygoogle" style="display:inline-block;width:160px;height:600px"
+                            data-ad-client="ca-pub-9107540490929984" data-ad-slot="4376141825"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+
+                    <div class="skyscraper">
+                        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <!-- Bottom Skyscraper -->
+                        <ins class="adsbygoogle" style="display:inline-block;width:160px;height:600px"
+                            data-ad-client="ca-pub-9107540490929984" data-ad-slot="3387984471"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Footer-->
+        <!--Footer-->
+        <div class="footer">
+            <div class="appeal">
+                <div class="wrapper">
+                    <p>Is this website helpful to you? Please give us a
+                        <a href="/like.php"
+                            onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=250,width=600,top=150, left='+((screen.width/2)-300));return false;">like</a>,
+                        or share your <a href="/contact-us.php" target="_blank">feedback</a><em> to help us
+                            improve</em>.
+                        Connect with us on <a href="https://www.facebook.com/tutorialrepublic"
+                            target="_blank">Facebook</a>
+                        and <a href="https://twitter.com/tutrepublic" target="_blank">Twitter</a> for the latest
+                        updates.
+                    </p>
+                </div>
+            </div>
+            <div class="footer-inner">
+                <div class="wrapper clearfix">
+                    <div class="link-box">
+                        <h4>About Us</h4>
+                        <div class="clearfix">
+                            <a href="/about-us.php">Our Story</a>
+                            <a href="/terms-of-use.php">Terms of Use</a>
+                            <a href="/privacy-policy.php">Privacy Policy</a>
+                        </div>
+                    </div>
+                    <div class="link-box">
+                        <h4>Contact</h4>
+                        <div class="clearfix">
+                            <a href="/contact-us.php">Contact Us</a>
+                            <a href="/contact-us.php" target="_blank">Report Error</a>
+                            <a href="/advertise-with-us.php">Advertise</a>
+                        </div>
+                    </div>
+                    <div class="tool-box">
+                        <h4>Interactive Tools</h4>
+                        <div class="tools-list clearfix" id="tools">
+                            <a href="/font-awesome-icons-classes.php" target="_blank">Font Awesome Icon Search
+                                Utility</a>
+                            <a href="/html-formatter.php" target="_blank">HTML Formatter</a>
+                            <a href="/faq/what-is-the-maximum-length-of-title-and-meta-description-tag.php">Title &amp;
+                                Meta
+                                Length Calculator</a>
+                            <a href="/html-reference/html-color-picker.php">HTML Color Picker</a>
+                            <a href="/twitter-bootstrap-button-generator.php" target="_blank">Bootstrap Button
+                                Generator</a>
+                            <a href="/codelab.php?topic=sql&amp;file=select-all" target="_blank">SQL Playground</a>
+                            <a href="/bootstrap-icons-classes.php" target="_blank">Bootstrap Icon Finder</a>
+                            <a href="/codelab.php?topic=html&amp;file=hello-world" target="_blank">HTML Editor</a>
+                        </div>
+                    </div>
+                    <div class="footer-logo">
+                        <p><img src="/lib/images/logo.svg" alt="TutorialRepublic" />
+                        <p>
+                        <div>
+                            <a href="https://www.buymeacoffee.com/tutrepublic" class="bmc-btn" rel="nofollow"
+                                target="_blank">
+                                <img src="/lib/images/bmc-btn.png" alt="BMC" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-strip">
+                <div class="wrapper">
+                    <div class="notice">Copyright &copy; 2022 Tutorial Republic. All Rights Reserved.</div>
+                    <div class="social-media">
+                        <em>Share This:</em>
+                        <a href="https://facebook.com/sharer.php?u=https://www.tutorialrepublic.com%2Fhtml-tutorial%2Fhtml-get-started.php"
+                            onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600,top=150, left='+((screen.width/2)-300));return false;"
+                            title="Facebook"><i class="icon-facebook"></i></a>
+                        <a href="#" id="tweet-btn"
+                            onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600,top=150, left='+((screen.width/2)-300));return false;"
+                            title="Twitter"><i class="icon-twitter"></i></a>
+                        <a href="#" id="email-btn"
+                            onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600,top=150, left='+((screen.width/2)-300));return false;"
+                            rel="noreferrer" title="Gmail"><i class="icon-mail"></i></a>
+                    </div>
+                </div>
+            </div>
+            <script>
+                var title = document.title.replace('- Tutorial Republic', '');
+                document.getElementById('tweet-btn').href = 'https://twitter.com/share?text=' + title + '- &url=https://www.tutorialrepublic.com%2Fhtml-tutorial%2Fhtml-get-started.php';
+                document.getElementById('email-btn').href = 'https://mail.google.com/mail/?view=cm&fs=1&su=' + title + '&body=https://www.tutorialrepublic.com%2Fhtml-tutorial%2Fhtml-get-started.php';
+            </script>
+        </div>
+        <!--End:Footer-->
+
+        <div class="backdrop mobile-only"></div>
+
+        <!-- TutorialRepublic base script -->
+        <script>
+            // Adding CSS files
+            [
+                '/lib/styles/extended-3.2.css',
+                '/lib/icomoon/style.css'
+            ].forEach(function (href) {
+                var link = document.createElement('link');
+                link.rel = 'stylesheet';
+                link.href = href;
+                (document.getElementsByTagName('head')[0]).appendChild(link);
+            });
+
+            // Adding JS files
+            [
+                'https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js',
+                '/lib/js/prism.js',
+                '/lib/js/default-1.3.js'
+            ].forEach(function (src) {
+                var script = document.createElement('script');
+                script.async = false; // important
+                script.src = src;
+                (document.getElementsByTagName('body')[0]).appendChild(script);
+            });
+        </script>
+
+
+        <!--End:Footer-->
+</body>
+<!-- InstanceEnd -->
+
+</html>
